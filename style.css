@@ -1,0 +1,887 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --btn-color: #00000091;
+    --about-sec: #070707;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 75%;
+    scroll-behavior: smooth;
+}
+
+.header {
+    padding: 1rem 7%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    /* background: #000000; */
+
+}
+
+.logo img {
+    width: 90px;
+}
+
+.navbar a {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.navbar a:hover {
+    color: var(--btn-color);
+}
+
+.icon div:hover {
+    cursor: pointer;
+}
+
+.icon a {
+    text-align: justify;
+    color: rgb(251, 249, 249);
+    padding: 0.7rem;
+    color: 1px solid orange;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.icon i {
+    display: flex;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+    background: transparent;
+    border: 1px solid orange;
+}
+
+.navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.home {
+    padding: 0;
+    background: url("Img/bccolor1.jpg");
+    min-height: 100vh;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-home {
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.home-inner-content {
+    flex: 1 1 45rem;
+}
+
+.home-image img {
+    padding: 6rem;
+    margin: 6rem;
+    width: 100%;
+}
+
+.home-text-content {
+    padding: 0 10rem;
+}
+
+.home-text-content h1 {
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.home-text-content h1 span {
+    color: rgb(0, 0, 0);
+}
+
+.home-text-content p {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 1.9rem;
+}
+
+.home-text-content a {
+    color: #ffffff;
+    padding: 0.7rem;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 1.3rem;
+    transition: 0.5s;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.home-inner-content a:hover {
+    border-radius: 10px;
+    transform: scale(1.1);
+    color: rgb(0, 0, 0);
+}
+
+.about {
+    padding: 2rem 7%;
+    background: var(--about-sec);
+}
+
+.main-about {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.about-content {
+    flex: 1 1 45rem;
+}
+
+.about-inner-content {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.about-content .about-inner-content img {
+    width: 68%;
+    margin-left: 100px;
+
+}
+
+.about-content .about-inner-content:hover img {
+    transform: perspective(1000px) rotateX(-4.80deg) rotateY(-10.23deg) scale3d(1.05, 1.05, 1.05);
+
+}
+
+.about-text-content {
+    padding: 0 4rem;
+}
+
+.about-text-content h1 {
+    color: #e58f00;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.about-text-content p {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 35px;
+}
+
+.quality {
+    padding: 4rem 7%;
+    background-image: linear-gradient(60.34deg, white 52.45%, var(--btn-color) 52.45%);
+}
+
+.main-quality {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.main-inner-quality {
+    flex: 1 1 45rem;
+}
+
+.quality-content {
+    padding: 0 4rem;
+}
+
+.quality-content h1 {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.quality-content p {
+    color: var(--about-sec);
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.qulity-image {
+    width: 90%;
+    float: left;
+}
+
+.qulity-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* gallery */
+
+.gallery {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding: 1rem 7%;
+    background: var(--about-sec);
+}
+
+.gallery h1 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 37px;
+    justify-content: center;
+    color: white;
+}
+
+.main-gallery {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 2rem;
+}
+
+.inner-gallery {
+    flex: 1 1 300px;
+}
+
+.inner-gallery .gallery-image img {
+    width: 270px;
+}
+
+.inner-gallery .gallery-image:hover img {
+    transform: perspective(1000px) rotateX(-4.80deg) rotateY(-10.23deg) scale3d(1.05, 1.05, 1.05);
+}
+
+/* gallery
+ end */
+
+.enjoy-our-food {
+    padding: 0;
+    background: url("Img/enjoye.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* food menu */
+.food-main-content {
+    width: 40%;
+    border: 5px solid white;
+    padding: 2rem;
+}
+
+.food-main-content h1 {
+    color: orange;
+    font-size: 26px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.food-main-content p {
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1rem 0;
+
+}
+
+.sub-heading {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding-top: 1rem;
+
+}
+
+.heading {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dishes {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.dishes .box-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0rem;
+}
+
+.dishes .box-container .box {
+    padding: 2.5rem;
+    margin: 5rem;
+    background: rgb(255, 255, 255);
+    border-radius: 3rem;
+    border: 1rem sold rgb(0, 0, 0);
+    box-shadow: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.box img {
+    width: 90%;
+    transition: 0.3s;
+}
+
+.dishes .box-container .box .fa-heart:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    transform: scale(1.1);
+
+}
+
+.dishes .box-container .box .fa-heart {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: black;
+}
+
+.dishes .box-container .box .fa-heart {
+    right: 1.5rem;
+}
+
+.dishes .box-container .box .stars {
+    padding: 1rem 0;
+}
+
+.dishes .box-container .box .stars i {
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+}
+
+.dishes .box-container .box h3 {
+    font-size: 1.3rem;
+}
+
+.dishes .box-container .box span {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    margin: 1rem;
+    font-size: 1.3rem;
+}
+
+.box a:hover {
+    border: 1px solid rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.877);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+.box a {
+    color: rgb(255, 255, 255);
+    padding: 0.1rem;
+    color: 1px solid orange;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+}
+
+.before {
+    display: flex;
+    /* float: right; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #000000;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.before img {
+    width: 40%;
+    object-fit: cover;
+    margin-right: 265px;
+}
+
+.before h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.before p {
+    width: 300px;
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+
+
+/* food menu */
+
+.foodmenu {
+    text-align: center;
+    background: rgb(0, 0, 0);
+    /* border-bottom: 2px solid rgb(164, 32, 32); */
+
+}
+
+.nav-item {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    align-self: auto;
+    display: inline-block;
+}
+
+.nav-item i {
+    padding: 1rem;
+}
+
+.table-class a {
+    color: white;
+}
+
+.food-menu {
+    font-size: 1rem;
+    float: right;
+}
+
+.text-center h3 {
+    color: white;
+}
+
+.text-center h1 {
+    font-size: 35px;
+    color: white;
+}
+
+.ps-4 h5 {
+    color: white;
+    font-size: 18px;
+}
+
+.ps-4 p {
+    color: white;
+    font-size: 15px;
+
+}
+
+.tab-contain {
+    padding: 8rem;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.ps-4 span {
+    width: 11rem;
+    color: orange;
+}
+
+.tab-contain a {
+
+    font-size: medium;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.651);
+    color: rgb(255, 255, 255);
+    transition: scale(1, 1);
+}
+
+.tab-contain a:hover {
+    border-radius: 8px;
+
+    transition: 0.2s;
+
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.food-menu img {
+    transition: transform 0.5s;
+}
+
+.food-menu:hover img {
+    transform: scale(1.1);
+}
+
+/* team */
+
+.team {
+    padding: 1.5rem;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.team h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.team h1 span {
+    margin-left: 10px;
+}
+
+.info h2 {
+    font-size: 23px;
+}
+
+.info p {
+    font-size: 1rem;
+}
+
+.team .team-box {
+    width: 95%;
+    margin: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 13px;
+}
+
+.team .team-box .profile {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+    transition: 0.4s;
+}
+
+.team .team-box .profile:hover {
+    border-radius: 20px;
+    height: 320px;
+}
+
+.team .team-box .profile img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+}
+
+.team .team-box .profile:hover img {
+    border-radius: 20px;
+    margin-top: -230px;
+}
+
+.team .team-box .profile .info {
+    font-size: 1.3rem;
+    position: absolute;
+    text-align: center;
+    top: 110%;
+    transition: 0.4s;
+}
+
+.team .team-box .profile:hover .info {
+    top: 40%;
+}
+
+.team .team-box .info .name {
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.team .team-box .info .bio {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+.team .team-box .info .team-icon i {
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.7rem;
+}
+
+.team .team-box .info .team-icon i:hover {
+    color: orange;
+}
+
+
+
+
+/* foooter senction */
+
+footer {
+    background: url("Img/background.png");
+    min-height: 40vh;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border-top-left-radius: 123px; */
+}
+
+.row {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.row img {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}
+
+.row p {
+    font-size: 15px;
+    color: white;
+    width: 100%;
+}
+
+.col {
+    margin: 0rem;
+    flex-basis: 20%;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+    margin-right: 5%;
+}
+
+.col:nth-child(2) .col:nth-child(3) {
+    flex-basis: 15px;
+}
+
+.col h4 {
+    font-size: 1.2rem;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid white;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+}
+
+form .far {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 250%;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: 0;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+.col-icon .uil {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0);
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+}
+
+.undrline {
+    width: 100px;
+    height: 5px;
+    background: #dfdfdf;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+/* footerended */
+
+
+
+
+
+
+
+@media(max-width:767px) {
+    .header {
+        padding: 2rem;
+    }
+
+    .icon div {
+        display: initial;
+    }
+
+    .navbar {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 100%;
+        background-color: var(--btn-color);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .navbar a {
+        display: block;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+
+    }
+
+    .home-text-content {
+        padding: 0 2rem;
+    }
+
+    .main-home {
+        padding: 2rem 0;
+    }
+
+    .home {
+        padding-top: 100px;
+
+    }
+
+    .home-image img {
+        transform: translate(0%, 0%);
+    }
+
+    .home-text-content {
+        margin-top: 300px;
+    }
+
+    .about-content .about-inner-content img {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .quality-content {
+        padding: 1rem 2rem;
+    }
+
+    .quality-content h1 {
+        color: var(--about-sec)
+    }
+
+    .food-main-content {
+        width: 100%;
+        border: 4px solid white;
+        padding: 1rem;
+    }
+
+    .footer-navbar a {
+        display: block;
+
+    }
+}
